@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/opendns/merchant-esolutions-php.svg?branch=master)](https://travis-ci.org/opendns/merchant-esolutions-php)
+
 # Introduction
 merchant-esolutions-php is designed to make it easier to use the various payment
 APIs provided by Merchant e-Solutions.
@@ -77,3 +79,4 @@ profiles.
 _Note: If you're building a new application, it's probably better to use the Trident API to store a card and issue additional Sale transactions against it_
 
 _Further Note: The recurring billing API support is experimental, please feel free to open bugs/pull requests if you find yourself using it._
+
