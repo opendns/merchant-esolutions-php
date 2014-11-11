@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class OpenDNS\MES\Request</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" href="resources/style.css?2291698064">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Overview</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="namespace-OpenDNS.MES.html" title="Summary of OpenDNS\MES"><span>Namespace</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-OpenDNS.html">OpenDNS<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-OpenDNS.MES.html">MES<span></span></a>
+						<ul>
+				<li><a href="namespace-OpenDNS.MES.Recurring.html">Recurring</a>
+						</li>
+				<li><a href="namespace-OpenDNS.MES.Reporting.html">Reporting</a>
+						</li>
+				<li><a href="namespace-OpenDNS.MES.Trident.html">Trident</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-OpenDNS.MES.Request.html">Request</a></li>
+				<li><a href="class-OpenDNS.MES.Response.html">Response</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Request</h1>
+
+
+	<div class="description">
+	<p>Base abstract for all MeS APIs</p>
+
+	</div>
+
+
+
+	<div>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-OpenDNS.MES.Recurring.Request.html">OpenDNS\MES\Recurring\Request</a></code>, 
+			<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Request.html">OpenDNS\MES\Trident\Request</a></code>
+		</p>
+	</div>
+
+	<div>
+		<h3>Indirect known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-OpenDNS.MES.Recurring.Create.html">OpenDNS\MES\Recurring\Create</a></code>, 
+			<code><a href="class-OpenDNS.MES.Recurring.Delete.html">OpenDNS\MES\Recurring\Delete</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Refund.html">OpenDNS\MES\Trident\Refund</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Sale.html">OpenDNS\MES\Trident\Sale</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.StoreCard.html">OpenDNS\MES\Trident\StoreCard</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Verification.html">OpenDNS\MES\Trident\Verification</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Void.html">OpenDNS\MES\Trident\Void</a></code>, 
+			<code><a href="class-OpenDNS.MES.Recurring.RecurringDetailRequest.html">OpenDNS\MES\Recurring\RecurringDetailRequest</a></code>, 
+			<code><a href="class-OpenDNS.MES.Recurring.Update.html">OpenDNS\MES\Recurring\Update</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Capture.html">OpenDNS\MES\Trident\Capture</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.CardTransaction.html">OpenDNS\MES\Trident\CardTransaction</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.Credit.html">OpenDNS\MES\Trident\Credit</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.DeleteStoredCard.html">OpenDNS\MES\Trident\DeleteStoredCard</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.PreAuthorization.html">OpenDNS\MES\Trident\PreAuthorization</a></code>, 
+			<code><a href="class-OpenDNS.MES.Trident.ReAuthorization.html">OpenDNS\MES\Trident\ReAuthorization</a></code>
+		</p>
+	</div>
+
+
+
+
+
+	<div class="alert alert-info">
+		<b>Abstract</b><br>
+		
+		<b>Namespace:</b> OpenDNS\MES<br>
+		
+
+		<b>Located at</b> <a href="source-class-OpenDNS.MES.Request.html#6-188" title="Go to source code">Request.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#44-54" title="Go to source code">__construct</a>( <span>string <var>$environment</var></span> )</code>
+
+			<div class="description short">
+				<p>Constructor, for constructing new instances</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor, for constructing new instances</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$environment</var></dt>
+						<dd>One of the ENV consts for API environment
+</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="factory" id="_factory">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_factory">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#56-65" title="Go to source code">factory</a>( <span>string <var>$environment</var></span> )</code>
+
+			<div class="description short">
+				<p>Factory method for convenient chaining</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Factory method for convenient chaining</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$environment</var></dt>
+						<dd>One of the ENV consts for API environment
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code></code><br>A new instance
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="execute" id="_execute">
+
+			<td class="attributes"><code>
+				final public 
+				Guzzle\Http\Stream\StreamInterface
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_execute">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#67-92" title="Go to source code">execute</a>( )</code>
+
+			<div class="description short">
+				<p>Run the request and return the response body</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Run the request and return the response body</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>Guzzle\Http\Stream\StreamInterface</code><br>A Guzzle stream object representing the response body
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getApiUrl" id="_getApiUrl">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getApiUrl">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#105-123" title="Go to source code">getApiUrl</a>( )</code>
+
+			<div class="description short">
+				<p>Assemble a full API url out of class properties</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Assemble a full API url out of class properties</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the combined API url
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getClient" id="_getClient">
+
+			<td class="attributes"><code>
+				 protected 
+				Guzzle\Http\Client
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getClient">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#125-137" title="Go to source code">getClient</a>( )</code>
+
+			<div class="description short">
+				<p>Return a singleton Guzzle HTTP client</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Return a singleton Guzzle HTTP client</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>Guzzle\Http\Client</code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="removeField" id="_removeField">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_removeField">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#139-149" title="Go to source code">removeField</a>( <span>string <var>$field</var></span> )</code>
+
+			<div class="description short">
+				<p>Remove a set field from the current request</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Remove a set field from the current request</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd>Field name to unset from the request
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setField" id="_setField">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setField">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#151-162" title="Go to source code">setField</a>( <span>string <var>$field</var></span>, <span>integer|string <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Set a new field on the current request</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set a new field on the current request</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$field</var></dt>
+						<dd>The field name to set
+</dd>
+						<dt><var>$value</var></dt>
+						<dd>value of the field (will be cast to string)
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setDefaults" id="_setDefaults">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setDefaults">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#164-175" title="Go to source code">setDefaults</a>( )</code>
+
+			<div class="description short">
+				<p>Set any defined default fields on the request</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set any defined default fields on the request</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Request.html">OpenDNS\MES\Request</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="processResponse" id="_processResponse">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-OpenDNS.MES.Response.html">OpenDNS\MES\Response</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_processResponse">#</a>
+			<code><a href="source-class-OpenDNS.MES.Request.html#177-186" title="Go to source code">processResponse</a>( <span>Guzzle\Http\Stream\StreamInterface <var>$response</var></span> )</code>
+
+			<div class="description short">
+				<p>Allows child classes to post-process the results before returning them</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Allows child classes to post-process the results before returning them</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$response</var></dt>
+						<dd>The Guzzle stream object returned by execute()
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Response.html">OpenDNS\MES\Response</a></code></code><br>An object representing the MeS response
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+		<h2>Constants summary</h2>
+		<table class="summary table table-bordered table-striped constants" id="constants">
+		<tr data-order="ENV_PROD" id="ENV_PROD">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Request.html#11" title="Go to source code"><b>ENV_PROD</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#ENV_PROD" class="anchor">#</a>
+					<code><span class="php-quote">'www'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ENV_CERT" id="ENV_CERT">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Request.html#12" title="Go to source code"><b>ENV_CERT</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#ENV_CERT" class="anchor">#</a>
+					<code><span class="php-quote">'cert'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ENV_TEST" id="ENV_TEST">
+
+			<td class="attributes"><code>string</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Request.html#13" title="Go to source code"><b>ENV_TEST</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#ENV_TEST" class="anchor">#</a>
+					<code><span class="php-quote">'test'</span></code>
+				</div>
+			</td>
+		</tr>
+		</table>
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="httpMethod" id="$httpMethod">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Request.html#15-16" title="Go to source code"><var>$httpMethod</var></a>
+
+				<div class="description short">
+					<p>HTTP Method to use for the request</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>HTTP Method to use for the request</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$httpMethod" class="anchor">#</a>
+					<code><span class="php-quote">'POST'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="apiBaseDomain" id="$apiBaseDomain">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Request.html#18-19" title="Go to source code"><var>$apiBaseDomain</var></a>
+
+				<div class="description short">
+					<p>Base domain name for the API as a whole</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Base domain name for the API as a whole</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$apiBaseDomain" class="anchor">#</a>
+					<code><span class="php-quote">'merchante-solutions.com'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="apiEnvironment" id="$apiEnvironment">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Request.html#21-22" title="Go to source code"><var>$apiEnvironment</var></a>
+
+				<div class="description short">
+					<p>Environment subdomain for the api</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Environment subdomain for the api</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$apiEnvironment" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="apiBasePath" id="$apiBasePath">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Request.html#24-25" title="Go to source code"><var>$apiBasePath</var></a>
+
+				<div class="description short">
+					<p>The path to an API's endpoints on the server</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The path to an API's endpoints on the server</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$apiBasePath" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="apiEndpointPath" id="$apiEndpointPath">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Request.html#27-28" title="Go to source code"><var>$apiEndpointPath</var></a>
+
+				<div class="description short">
+					<p>The name of a specific endpoint within the api base path</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The name of a specific endpoint within the api base path</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$apiEndpointPath" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="defaultFieldValues" id="$defaultFieldValues">
+			<td class="attributes"><code>
+				protected  
+				string[]
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Request.html#30-31" title="Go to source code"><var>$defaultFieldValues</var></a>
+
+				<div class="description short">
+					<p>key/value pairs to be set by default on new requests</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>key/value pairs to be set by default on new requests</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$defaultFieldValues" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js?371644040"></script>
+<script src="elementlist.js?523087280"></script>
+</body>
+</html>

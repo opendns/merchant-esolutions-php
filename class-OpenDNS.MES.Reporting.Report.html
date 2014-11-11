@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class OpenDNS\MES\Reporting\Report</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" href="resources/style.css?2291698064">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Overview</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="namespace-OpenDNS.MES.Reporting.html" title="Summary of OpenDNS\MES\Reporting"><span>Namespace</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-OpenDNS.html">OpenDNS<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-OpenDNS.MES.html">MES<span></span></a>
+						<ul>
+				<li><a href="namespace-OpenDNS.MES.Recurring.html">Recurring</a>
+						</li>
+				<li class="active"><a href="namespace-OpenDNS.MES.Reporting.html">Reporting</a>
+						</li>
+				<li><a href="namespace-OpenDNS.MES.Trident.html">Trident</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-OpenDNS.MES.Reporting.Report.html">Report</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Report</h1>
+
+
+	<div class="description">
+	<p>Base abstract for all MeS APIs</p>
+
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-OpenDNS.MES.Request.html"><span>OpenDNS\MES\Request</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>OpenDNS\MES\Reporting\Report</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> OpenDNS\MES\Reporting<br>
+		
+
+		<b>Located at</b> <a href="source-class-OpenDNS.MES.Reporting.Report.html#5-160" title="Go to source code">Reporting/Report.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="setAuthenticationInfo" id="_setAuthenticationInfo">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setAuthenticationInfo">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#42-55" title="Go to source code">setAuthenticationInfo</a>( <span>string <var>$userId</var></span>, <span>string <var>$password</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets authentication info for the request</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets authentication info for the request</p>
+
+<p>This is required before calling execute()</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$userId</var></dt>
+						<dd>$profileId Your MeS User ID
+</dd>
+						<dt><var>$password</var></dt>
+						<dd>$profileKey Your MeS Password
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setReportId" id="_setReportId">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setReportId">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#57-68" title="Go to source code">setReportId</a>( <span>integer <var>$reportId</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the report ID you'd like returned</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the report ID you'd like returned</p>
+
+<p>Expected values are the REPORT_ consts from this class</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$reportId</var></dt>
+						<dd>A report id
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setBeginDate" id="_setBeginDate">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setBeginDate">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#70-83" title="Go to source code">setBeginDate</a>( <span>DateTime <var>$startDate</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the start date of the report</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the start date of the report</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$startDate</var></dt>
+						<dd>$reportId A datetime instance representing the start date of the report
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setEndDate" id="_setEndDate">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setEndDate">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#85-98" title="Go to source code">setEndDate</a>( <span>DateTime <var>$endDate</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the end date of the report</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the end date of the report</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$endDate</var></dt>
+						<dd>$reportId A datetime instance representing the end date of the report
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setNodeId" id="_setNodeId">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setNodeId">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#100-109" title="Go to source code">setNodeId</a>( <span>string <var>$nodeId</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the node ID (AKA merchant account number)</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the node ID (AKA merchant account number)</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$nodeId</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setReportType" id="_setReportType">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setReportType">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#111-122" title="Go to source code">setReportType</a>( <span>integer <var>$reportType</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the report type to return.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the report type to return.</p>
+
+<p>Valid values are the TYPE_ constants from this class</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$reportType</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setIncludeTridentTransactionId" id="_setIncludeTridentTransactionId">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setIncludeTridentTransactionId">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#124-133" title="Go to source code">setIncludeTridentTransactionId</a>( <span>boolean <var>$includeId</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets whether the report should include the trident transaction ID or not</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets whether the report should include the trident transaction ID or not</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$includeId</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setIncludePurchaseId" id="_setIncludePurchaseId">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setIncludePurchaseId">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#135-144" title="Go to source code">setIncludePurchaseId</a>( <span>boolean <var>$includeId</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets whether the report should include the purchase ID or not</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets whether the report should include the purchase ID or not</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$includeId</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCustomQueryId" id="_setCustomQueryId">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCustomQueryId">#</a>
+			<code><a href="source-class-OpenDNS.MES.Reporting.Report.html#146-158" title="Go to source code">setCustomQueryId</a>( <span>integer <var>$queryId</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets a customer query ID to be run.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets a customer query ID to be run.</p>
+
+<p>This is only for use when fetching reports of type REPORT_CUSTOM. Some
+defaults are specified in the QUERY_ constants above.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$queryId</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><code><a href="class-OpenDNS.MES.Reporting.Report.html">OpenDNS\MES\Reporting\Report</a></code></code><br>The current class instance for chaining
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from <a href="class-OpenDNS.MES.Request.html#methods">OpenDNS\MES\Request</a></h3>
+		<p class="elementList">
+			<code><a href="class-OpenDNS.MES.Request.html#___construct">__construct()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_execute">execute()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_factory">factory()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_getApiUrl">getApiUrl()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_getClient">getClient()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_processResponse">processResponse()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_removeField">removeField()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_setDefaults">setDefaults()</a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#_setField">setField()</a></code>
+		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+		<h2>Constants summary</h2>
+		<table class="summary table table-bordered table-striped constants" id="constants">
+		<tr data-order="REPORT_ACHP_RETURN_SUMMARY" id="REPORT_ACHP_RETURN_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#7" title="Go to source code"><b>REPORT_ACHP_RETURN_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_ACHP_RETURN_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">18</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_ACHP_SETTLEMENT_SUMMARY" id="REPORT_ACHP_SETTLEMENT_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#8" title="Go to source code"><b>REPORT_ACHP_SETTLEMENT_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_ACHP_SETTLEMENT_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">17</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_AUTHORIZATION_LOG" id="REPORT_AUTHORIZATION_LOG">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#9" title="Go to source code"><b>REPORT_AUTHORIZATION_LOG</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_AUTHORIZATION_LOG" class="anchor">#</a>
+					<code><span class="php-num">15</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_BATCH_SUMMARY" id="REPORT_BATCH_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#10" title="Go to source code"><b>REPORT_BATCH_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_BATCH_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">1</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_CHARGEBACK_ADJUSTMENTS" id="REPORT_CHARGEBACK_ADJUSTMENTS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#11" title="Go to source code"><b>REPORT_CHARGEBACK_ADJUSTMENTS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_CHARGEBACK_ADJUSTMENTS" class="anchor">#</a>
+					<code><span class="php-num">5</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_CUSTOM" id="REPORT_CUSTOM">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#12" title="Go to source code"><b>REPORT_CUSTOM</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_CUSTOM" class="anchor">#</a>
+					<code><span class="php-num">9</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_DAILY_INTERCHANGE_SUMMARY" id="REPORT_DAILY_INTERCHANGE_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#13" title="Go to source code"><b>REPORT_DAILY_INTERCHANGE_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_DAILY_INTERCHANGE_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">8</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_DEPOSIT_SUMMARY" id="REPORT_DEPOSIT_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#14" title="Go to source code"><b>REPORT_DEPOSIT_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_DEPOSIT_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">3</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_FX_BATCH_SUMMARY" id="REPORT_FX_BATCH_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#15" title="Go to source code"><b>REPORT_FX_BATCH_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_FX_BATCH_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">10</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_FX_INTERCHANGE_SUMMARY" id="REPORT_FX_INTERCHANGE_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#16" title="Go to source code"><b>REPORT_FX_INTERCHANGE_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_FX_INTERCHANGE_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">13</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_INTERNATIONAL_CHARGEBACKS" id="REPORT_INTERNATIONAL_CHARGEBACKS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#17" title="Go to source code"><b>REPORT_INTERNATIONAL_CHARGEBACKS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_INTERNATIONAL_CHARGEBACKS" class="anchor">#</a>
+					<code><span class="php-num">11</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_INTERNATIONAL_RETRIEVAL_REQUESTS" id="REPORT_INTERNATIONAL_RETRIEVAL_REQUESTS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#18" title="Go to source code"><b>REPORT_INTERNATIONAL_RETRIEVAL_REQUESTS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_INTERNATIONAL_RETRIEVAL_REQUESTS" class="anchor">#</a>
+					<code><span class="php-num">12</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_INTERNATIONAL_SETTLEMENT_SUMMARY" id="REPORT_INTERNATIONAL_SETTLEMENT_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#19" title="Go to source code"><b>REPORT_INTERNATIONAL_SETTLEMENT_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_INTERNATIONAL_SETTLEMENT_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">14</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_PAYMENT_GATEWAY_REJECTED_TRANSACTIONS" id="REPORT_PAYMENT_GATEWAY_REJECTED_TRANSACTIONS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#20" title="Go to source code"><b>REPORT_PAYMENT_GATEWAY_REJECTED_TRANSACTIONS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_PAYMENT_GATEWAY_REJECTED_TRANSACTIONS" class="anchor">#</a>
+					<code><span class="php-num">23</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_PAYMENT_GATEWAY_SETTLED_TRANSACTIONS" id="REPORT_PAYMENT_GATEWAY_SETTLED_TRANSACTIONS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#21" title="Go to source code"><b>REPORT_PAYMENT_GATEWAY_SETTLED_TRANSACTIONS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_PAYMENT_GATEWAY_SETTLED_TRANSACTIONS" class="anchor">#</a>
+					<code><span class="php-num">22</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_PAYMENT_GATEWAY_UNSETTLED_TRANSACTIONS" id="REPORT_PAYMENT_GATEWAY_UNSETTLED_TRANSACTIONS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#22" title="Go to source code"><b>REPORT_PAYMENT_GATEWAY_UNSETTLED_TRANSACTIONS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_PAYMENT_GATEWAY_UNSETTLED_TRANSACTIONS" class="anchor">#</a>
+					<code><span class="php-num">21</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_RETRIEVAL_REQUESTS" id="REPORT_RETRIEVAL_REQUESTS">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#23" title="Go to source code"><b>REPORT_RETRIEVAL_REQUESTS</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_RETRIEVAL_REQUESTS" class="anchor">#</a>
+					<code><span class="php-num">7</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="REPORT_SETTLEMENT_SUMMARY" id="REPORT_SETTLEMENT_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#24" title="Go to source code"><b>REPORT_SETTLEMENT_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#REPORT_SETTLEMENT_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">2</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="TYPE_SUMMARY" id="TYPE_SUMMARY">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#26" title="Go to source code"><b>TYPE_SUMMARY</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#TYPE_SUMMARY" class="anchor">#</a>
+					<code><span class="php-num">0</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="TYPE_DETAIL" id="TYPE_DETAIL">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#27" title="Go to source code"><b>TYPE_DETAIL</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#TYPE_DETAIL" class="anchor">#</a>
+					<code><span class="php-num">1</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="QUERY_VISA_ARDEF_TABLES" id="QUERY_VISA_ARDEF_TABLES">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#29" title="Go to source code"><b>QUERY_VISA_ARDEF_TABLES</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#QUERY_VISA_ARDEF_TABLES" class="anchor">#</a>
+					<code><span class="php-num">283</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="QUERY_MC_ARDEF_TABLES" id="QUERY_MC_ARDEF_TABLES">
+
+			<td class="attributes"><code>integer</code></td>
+			<td class="name">
+				<code>
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#30" title="Go to source code"><b>QUERY_MC_ARDEF_TABLES</b></a>
+				</code>
+
+				<div class="description short">
+					
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#QUERY_MC_ARDEF_TABLES" class="anchor">#</a>
+					<code><span class="php-num">284</span></code>
+				</div>
+			</td>
+		</tr>
+		</table>
+
+		<h3>Constants inherited from <a href="class-OpenDNS.MES.Request.html#constants">OpenDNS\MES\Request</a></h3>
+		<p class="elementList">
+			<code><a href="class-OpenDNS.MES.Request.html#ENV_CERT"><b>ENV_CERT</b></a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#ENV_PROD"><b>ENV_PROD</b></a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#ENV_TEST"><b>ENV_TEST</b></a></code>
+		</p>
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="httpMethod" id="$httpMethod">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#32" title="Go to source code"><var>$httpMethod</var></a>
+
+				<div class="description short">
+					<p>HTTP Method to use for the request</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>HTTP Method to use for the request</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$httpMethod" class="anchor">#</a>
+					<code><span class="php-quote">'GET'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="defaultFieldValues" id="$defaultFieldValues">
+			<td class="attributes"><code>
+				protected  
+				string[]
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#34-38" title="Go to source code"><var>$defaultFieldValues</var></a>
+
+				<div class="description short">
+					<p>key/value pairs to be set by default on new requests</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>key/value pairs to be set by default on new requests</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$defaultFieldValues" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'reportType'</span> =&gt; <span class="php-num">0</span>,
+    <span class="php-quote">'encoding'</span> =&gt; <span class="php-quote">'csv'</span>,
+    <span class="php-quote">'includeTridentTranId'</span> =&gt; <span class="php-quote">'true'</span>,
+)</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="apiBasePath" id="$apiBasePath">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Reporting.Report.html#40" title="Go to source code"><var>$apiBasePath</var></a>
+
+				<div class="description short">
+					<p>The path to an API's endpoints on the server</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The path to an API's endpoints on the server</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$apiBasePath" class="anchor">#</a>
+					<code><span class="php-quote">'/jsp/reports/report_api.jsp'</span></code>
+				</div>
+			</td>
+		</tr>
+		</table>
+
+		<h3>Properties inherited from <a href="class-OpenDNS.MES.Request.html#properties">OpenDNS\MES\Request</a></h3>
+		<p class="elementList">
+			<code><a href="class-OpenDNS.MES.Request.html#$apiBaseDomain"><var>$apiBaseDomain</var></a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#$apiEndpointPath"><var>$apiEndpointPath</var></a></code>, 
+			<code><a href="class-OpenDNS.MES.Request.html#$apiEnvironment"><var>$apiEnvironment</var></a></code>
+		</p>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js?371644040"></script>
+<script src="elementlist.js?523087280"></script>
+</body>
+</html>

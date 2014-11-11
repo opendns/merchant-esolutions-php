@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class OpenDNS\MES\Response</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" href="resources/style.css?2291698064">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Overview</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="namespace-OpenDNS.MES.html" title="Summary of OpenDNS\MES"><span>Namespace</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-OpenDNS.html">OpenDNS<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-OpenDNS.MES.html">MES<span></span></a>
+						<ul>
+				<li><a href="namespace-OpenDNS.MES.Recurring.html">Recurring</a>
+						</li>
+				<li><a href="namespace-OpenDNS.MES.Reporting.html">Reporting</a>
+						</li>
+				<li><a href="namespace-OpenDNS.MES.Trident.html">Trident</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-OpenDNS.MES.Request.html">Request</a></li>
+				<li class="active"><a href="class-OpenDNS.MES.Response.html">Response</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Response</h1>
+
+
+	<div class="description">
+	<p>Base class for API responses.</p>
+
+<p>Accessible as an array, but you can't change any values.</p>
+
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+<b><span>OpenDNS\MES\Response</span></b>			
+			 implements 
+<span>ArrayAccess</span>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> OpenDNS\MES<br>
+		
+
+		<b>Located at</b> <a href="source-class-OpenDNS.MES.Response.html#4-96" title="Go to source code">Response.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-OpenDNS.MES.Response.html#17-24" title="Go to source code">__construct</a>( <span>Guzzle\Http\Message\Response <var>$guzzleResponse</var></span> )</code>
+
+			<div class="description short">
+				
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$guzzleResponse</var></dt>
+						<dd>Raw Guzzle response from the contructor args
+</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="json" id="_json">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_json">#</a>
+			<code><a href="source-class-OpenDNS.MES.Response.html#26-34" title="Go to source code">json</a>( )</code>
+
+			<div class="description short">
+				<p>Get the response body as a JSON object</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the response body as a JSON object</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>JSON string representing the MeS API response
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getResponseBodyStream" id="_getResponseBodyStream">
+
+			<td class="attributes"><code>
+				 public 
+				resource
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getResponseBodyStream">#</a>
+			<code><a href="source-class-OpenDNS.MES.Response.html#36-48" title="Go to source code">getResponseBodyStream</a>( )</code>
+
+			<div class="description short">
+				<p>Get the response body as a stream resource</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get the response body as a stream resource</p>
+
+<p>This is mostly useful for the reporting API, which returns CSV. You can use this together with fgetcsv().</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>resource</code><br>PHP stream resource representing the MeS response body
+
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetExists" id="_offsetExists">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetExists">#</a>
+			<code><a href="source-class-OpenDNS.MES.Response.html#50-60" title="Go to source code">offsetExists</a>( <span>string|integer <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Test whether a key exists in the response object</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Test whether a key exists in the response object</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code>
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetExists()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="offsetGet" id="_offsetGet">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_offsetGet">#</a>
+			<code><a href="source-class-OpenDNS.MES.Response.html#62-71" title="Go to source code">offsetGet</a>( <span>string|integer <var>$offset</var></span> )</code>
+
+			<div class="description short">
+				<p>Get a response value by its key</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get a response value by its key</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$offset</var></dt>
+						<dd>
+</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code>
+					</div>
+
+
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code>ArrayAccess::offsetGet()</code></div>
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+		<h3>Methods inherited from ArrayAccess</h3>
+		<p class="elementList">
+			<code>offsetSet()</code>, 
+			<code>offsetUnset()</code>
+		</p>
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="guzzleResponse" id="$guzzleResponse">
+			<td class="attributes"><code>
+				protected  
+				Guzzle\Http\Message\Response
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Response.html#11-12" title="Go to source code"><var>$guzzleResponse</var></a>
+
+				<div class="description short">
+					<p>Raw Guzzle response from the contructor args</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Raw Guzzle response from the contructor args</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$guzzleResponse" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="fields" id="$fields">
+			<td class="attributes"><code>
+				protected  
+				string[]
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-OpenDNS.MES.Response.html#14-15" title="Go to source code"><var>$fields</var></a>
+
+				<div class="description short">
+					<p>Parsed keys/values from the MeS response body</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Parsed keys/values from the MeS response body</p>
+
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$fields" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js?371644040"></script>
+<script src="elementlist.js?523087280"></script>
+</body>
+</html>
