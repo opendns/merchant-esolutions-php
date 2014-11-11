@@ -28,6 +28,7 @@ Composer creates its own autoloader. Include
 you will have full access to the merchant-esolutions-php client.
 
 # APIs
+This readme has a short description of the APIs and an example of each, but there's also a [full api reference](http://opendns.github.io/merchant-esolutions-php/) available on this project's Github page.
 
 ## Trident
 Trident is the payment gateway API, providing most card operations. A simple
