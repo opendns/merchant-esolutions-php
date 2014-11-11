@@ -1,0 +1,33 @@
+{
+    "name": "opendns/merchant-esolutions-php",
+    "description": "A client library for Merchant e-Solutions' payment gateway and other APIs",
+    "keywords": ["merchant e-solutions", "trident", "mes", "payment", "credit card"],
+    "homepage": "http://github.com/opendns/merchant-esolutions-php",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Doug Tabacco",
+            "email": "doug@opendns.com"
+        },
+        {
+            "name": "Josh Eveleth",
+            "email": "joshe@opendns.com"
+        }
+    ],
+    "require": {
+        "php": ">= 5.3.3",
+        "guzzlehttp/guzzle": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7",
+        "apigen/apigen": "4.0.0-RC3"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenDNS\\MES\\": "src/",
+            "OpenDNS\\MES\\Trident\\": "src/Trident/",
+            "OpenDNS\\MES\\Reporting\\": "src/Reporting/",
+            "OpenDNS\\MES\\Recurring\\": "src/Recurring/"
+        }
+    }
+}

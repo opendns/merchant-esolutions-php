@@ -1,0 +1,6 @@
+destination: docs
+source:
+	- src
+	
+templateTheme: bootstrap
+php: false
