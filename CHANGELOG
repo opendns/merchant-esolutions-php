@@ -1,13 +1,13 @@
 0.1.0
 =====
-:release-date: 2014-12-11
+:release-date: 2014-11-11
 :release-by: OpenDNS
 
 * Initial Release
 
 0.1.1
 =====
-:release-date: 2014-12-12
+:release-date: 2014-11-12
 :release-by: OpenDNS
 
 * Fix incorrect API subdomain for production
