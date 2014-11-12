@@ -8,7 +8,7 @@ use Guzzle\Http\QueryString;
  */
 abstract class Request
 {
-    const ENV_PROD = 'www';
+    const ENV_PROD = 'api';
     const ENV_CERT = 'cert';
     const ENV_TEST = 'test';
 
