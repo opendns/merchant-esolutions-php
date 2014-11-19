@@ -69,7 +69,7 @@ abstract class Request
      *
      * @return Guzzle\Http\Stream\StreamInterface A Guzzle stream object representing the response body
      */
-    public final function execute()
+    public function execute()
     {
         $this->response = null;
         $httpMethod = strtolower($this->httpMethod);
